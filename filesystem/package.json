@@ -1,0 +1,25 @@
+{
+  "name": "test",
+  "version": "0.1.0",
+  "description": "test",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "single-instance": true,
+  "author": "iwege",
+  "license": "BSD-2-Clause",
+  "window": {
+    "title": "node-webkit demo",
+    "frame": true,
+    "width": 366,
+    "height": 768,
+    "position": "mouse"
+  },
+  "webkit": {
+    "plugin": true
+  },
+  "dependencies": {
+    "adm-zip": "~0.4.3"
+  }
+}

@@ -1,0 +1,21 @@
+
+<div style="display:-webkit-box;width:500px;height:500px;">
+  <div style="width:200px;">
+    <div id="test-div">none</div>
+  </div>
+  <div style="-webkit-box-flex:1;display : -webkit-flex;overflow:scroll;">
+    <!--div style="overflow:scroll; width:100%;height:100%"--> <!--{add  this div and remove parent's overflow to fix flex box scroll bug}-->
+      <div style="height:900px;width:900px;">
+         Scroll down to hide this text;
+      </div>
+      <!--/div-->
+  </div>
+</div>
+<button id="button">setPosition</button>
+<script>
+  document.getElementById('button').onclick = function(){
+    //document.getElementById('test-div').style.position = 'absolute';
+    document.getElementById('test-div').style.left = '10px';
+    document.getElementById('test-div').innerHTML = 'absolute';
+  }
+</script>
